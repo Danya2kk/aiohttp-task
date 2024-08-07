@@ -1,7 +1,6 @@
 import aiohttp
 import asyncio
 from bs4 import BeautifulSoup
-import csv
 
 '''
 Напишите функцию fetch_page(session, url),
@@ -57,7 +56,6 @@ async def main(urls):
         return all_titles
 
 
-# Пример использования:
 urls = ['https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%BE%D0%B3', 'https://ru.wikipedia.org/wiki/Python',
         'https://ru.wikipedia.org/wiki/Java']
 print(asyncio.run(main(urls)))
